@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/decor/home/home",
+    "pages/decor/article/article",
+    "pages/decor/article/articleD/articleD",
+    "pages/decor/appoint/appoint",
+    "pages/decor/appoint/appointD/appointD",
+    "pages/decor/cartoon/cartoon",
+    "pages/decor/cartoon/cartoonItem/cartoonItem",
+    "pages/decor/cartoon/cartoonD/cartoonD",
+    "pages/decor/news/news",
+    "pages/decor/news/newsItem/newsItem",
+    "pages/decor/news/newsD/newsD",
+    "pages/decor/map/map",
+    "pages/decor/gallerItem/gallerItem",
+    "pages/decor/gallerItem/gallerD/gallerD",
+    "pages/logs/logs",
+    "pages/decor/order/order",
+    "pages/decor/user/user",
+    "pages/decor/chat/chat",
+    "pages/decor/post/post",
+    "pages/decor/comment/comment",
+    "pages/post/post",
+    "pages/po/po",
+    "pages/po/writepo/writepo",
+    "pages/decor/social/social",
+    "pages/login",
+    "pages/decor/inform/imform",
+    "pages/decor/good/good",
+    "pages/decor/mypost/mypost"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#a4ebf3"
+  },
+  "tabBar": {
+    "color": "#515151",
+    "selectedColor": "#599fff",
+    "borderStyle": "white",
+    "backgroundColor": "white",
+    "list": [
+      {
+        "pagePath": "pages/decor/home/home",
+        "text": "首页",
+        "iconPath": "images/tabbar/h.png",
+        "selectedIconPath": "images/tabbar/h1.png"
+      },
+      {
+        "pagePath": "pages/decor/social/social",
+        "text": "社区",
+        "iconPath": "images/logo/logo10.png",
+        "selectedIconPath": "images/logo/logo10-choose.png"
+      },
+      {
+        "pagePath": "pages/decor/user/user",
+        "text": "我的",
+        "iconPath": "images/logo/logo5.png",
+        "selectedIconPath": "images/logo/logo5-choose.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
