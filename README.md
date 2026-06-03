@@ -1,3 +1,49 @@
+# Good Drive - WeChat Mini Program (找驾驶陪练)
+
+Good Drive is a comprehensive WeChat Mini Program tailored for novice drivers seeking professional driving practice. It provides a seamless platform to find and book coaches, manage driving appointments, and engage with a community of fellow learners. 
+
+## ✨ Key Features
+
+* **Coach Booking System:** Users can browse available coaches, check their pricing, ratings, and free time, and place reservation orders for driving practice.
+* **Location Selection:** Easily set specific boarding and drop-off spots for each driving session.
+* **Order Management:** Users can view their order history, check appointment times, and submit evaluations/ratings after the session.
+* **Interactive Community:** A built-in forum where users can create posts, share experiences, and interact through likes and comments.
+* **Role-Based Access:** Distinct functionalities designed for Novice Drivers, Coaches, and Administrators (for content moderation).
+
+## 🛠️ Technology Stack
+
+* **Development Environment:** Official WeChat Mini Program IDE.
+* **Framework:** Native MINA framework.
+* **Frontend:** Mixed programming using WXML, WXSS, JavaScript, and JSON.
+* **Database:** JSON-based data storage.
+
+## 🏗️ System Architecture & Class Design
+
+The system is built with a clear Object-Oriented design. Below are the primary entities and their core attributes/methods:
+
+### User Roles
+* **MyInformation (Base Info):** Manages basic login credentials including `name`, `Sex`, and `Age`.
+* **Driver (Novice Driver):** Inherits or associates with base info. Tracks `uservehicletype` (preferred vehicle), `userIDnumber` (license ID), and handles methods like `getDriverInfo()`.
+* **Coach (Instructor):** Manages coach-specific data such as `coachIDnumber`, `price` (hourly rate), `freetime`, and `star` (rating). Includes methods like `SelectCoach()`.
+* **Admin:** Manages platform moderation, utilizing the `adminID` and the `CheckPost()` method to approve community content.
+
+### Core Business Logic
+* **Order:** Manages booking details, tracking the `time` (reservation time) and `Evaluation`. Created via `CreateNewReservation(userID, coachID)`.
+* **Vehicle:** Tracks coach vehicles, including `license` (plate number), `coachvehicletype`, and `insurance`.
+* **Spot:** Defines the physical locations for the practice session, categorized by `spottype` (boarding/drop-off) and `spotname`.
+* **Project:** Details specific practice items (e.g., parallel parking, highway driving) using `projectname` and `projectcontent`.
+
+### Community Module
+* **Post:** Manages user-generated content in the forum, tracking `posttime`, `posttitle`, `postcontent`, and `likecount`.
+* **Like:** Handles the interaction data when a user likes a post, tracking the `liketime`.
+* **Comment:** Manages replies under posts, recording `commenttime` and `commentcontent`.
+
+## 🚀 Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/wendyww0330/Good_Drive_Wechat_Mini_Program.git](https://github.com/wendyww0330/Good_Drive_Wechat_Mini_Program.git)
+
 # 驾驶陪练小程序
 ## 开发环境和框架：
 系统建模采用微信小程序官方提供的开发环境，系统框架采用微信小程序官方提供的MINA框架。
